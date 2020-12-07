@@ -1,0 +1,11 @@
+<!ELEMENT Gun (gun-object)>
+        <!ELEMENT gun-object (model, handy, origin, material, ttc)>
+        <!ELEMENT model (#PCDATA)>
+        <!ELEMENT handy (#PCDATA)>
+        <!ELEMENT origin (#PCDATA)>
+        <!ELEMENT material (#PCDATA)>
+        <!ELEMENT ttc (long_range, sighting_range, clip, optics)>
+        <!ELEMENT long_range (#PCDATA)>
+        <!ELEMENT sighting_range (#PCDATA)>
+        <!ELEMENT clip (#PCDATA)>
+        <!ELEMENT optics (#PCDATA)>

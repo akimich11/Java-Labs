@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xsd:schema version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:element name="Gun" type="guns"/>
+
+  <xsd:element name="gun-object" type="gunObject"/>
+
+  <xsd:element name="ttc" type="ttc"/>
+
+  <xsd:complexType name="guns">
+    <xsd:sequence>
+      <xsd:element ref="gun-object" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="gunObject">
+    <xsd:sequence>
+      <xsd:element name="model" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="handy" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="origin" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="material" type="xsd:string" minOccurs="0"/>
+      <xsd:element ref="ttc" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="ttc">
+    <xsd:sequence>
+      <xsd:element name="long_range" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="sighting_range" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="clip" type="xsd:string" minOccurs="0"/>
+      <xsd:element name="optics" type="xsd:string" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
+
