@@ -29,11 +29,16 @@ public class Bill implements Serializable {
 		}
 		GregorianCalendar date = new GregorianCalendar();
 		date.setLenient(false);
-		int day = Integer.parseInt(st.nextToken());
-		int month = Integer.parseInt(st.nextToken());
 		int year = Integer.parseInt(st.nextToken());
-		date.set(year, month, day);
-		date.getTime();
+		int month = Integer.parseInt(st.nextToken());
+		int day = Integer.parseInt(st.nextToken());
+		try {
+			date.set(year, month - 1, day);
+			date.getTime();
+		}
+		catch (Exception e) {
+			return false;
+		}
 		return true;
 	}
 

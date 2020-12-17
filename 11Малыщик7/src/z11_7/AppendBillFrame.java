@@ -44,7 +44,7 @@ public class AppendBillFrame extends JDialog
         address = new JTextField("",25);
         contentPane.add(address);
 
-        contentPane.add(new JLabel("Date (DD.MM.YYYY)"));
+        contentPane.add(new JLabel("Date (YYYY.MM.DD)"));
         date = new JTextField("",25);
         contentPane.add(date);
 

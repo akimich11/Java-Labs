@@ -105,7 +105,7 @@ public class MainFrame extends JFrame {
 		about.addActionListener(event -> JOptionPane.showMessageDialog(MainFrame.this,
 				"Лабораторная работа 11.\n" +
 						"Создать графическое приложение Java, реализующее GUI для  задания №8\n\n" +
-						"Аким Малыщик, 2020, ФПМИ БГУ, 2 курс 11 группа"));
+						"Малыщик Аким, 2020, ФПМИ БГУ, 2 курс 11 группа"));
 
 		menu_file.add(append_from_file);
 		menu_file.add(exitItem);
